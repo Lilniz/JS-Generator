@@ -88,28 +88,30 @@ function generatePassword() {
   else if (specialCharacter) {
     criteria = criteria.concat(specialCharacterArr)
   }
-  else ("")
-
-
-  if (uppercase) {
-    criteria = criteria.concat(uppercaseArr)
-    console.log(criteria)
+  else {
+    return generatePassword()
   }
 
-  if (lowercase) {
-    criteria = criteria.concat(lowercaseArr)
-    console.log(criteria)
-  }
 
-  if (numerics) {
-    criteria = criteria.concat(numericsArr)
-    console.log(criteria)
-  }
+  // if (uppercase) {
+  //   criteria = criteria.concat(uppercaseArr)
+  //   console.log(criteria)
+  // }
 
-  if (specialCharacter) {
-    criteria = criteria.concat(specialCharacterArr)
-    console.log(criteria)
-  }
+  // if (lowercase) {
+  //   criteria = criteria.concat(lowercaseArr)
+  //   console.log(criteria)
+  // }
+
+  // if (numerics) {
+  //   criteria = criteria.concat(numericsArr)
+  //   console.log(criteria)
+  // }
+
+  // if (specialCharacter) {
+  //   criteria = criteria.concat(specialCharacterArr)
+  //   console.log(criteria)
+  // }
 
   var passWord = ("")
 
