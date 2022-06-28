@@ -10,4 +10,4 @@ The CSS and JavaScript files are found within; Assets.
 
 The image referenced below is found within; Assets/Images.
 
-[Application/Generator Screenshot](Assets/images/03-javascript-homework-demo.png)
+![Application/Generator Screenshot](Assets/images/03-javascript-homework-demo.png)
