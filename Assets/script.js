@@ -26,92 +26,91 @@ function generatePassword() {
 
   if (!uppercase && !lowercase && !numerics && !specialCharacter) {
     alert("Needs to select at least one character type.")
-    return ""
+    return generatePassword
   } 
-  // For 4 Positive options
-  else if (uppercase && lowercase && numerics && specialCharacter) {
-    criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr, specialCharacterArr)
-  }
-  // For 3 Positive options
-  else if (uppercase && lowercase && numerics){
-    criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr)
-  }
-  // For 3 Positive options
-  else if (uppercase && lowercase && specialCharacter){
-    criteria = criteria.concat(uppercaseArr, lowercaseArr, specialCharacterArr)
-  }
-  // For 3 Positive options
-  else if (uppercase && numerics && specialCharacter){
-    criteria = criteria.concat(uppercaseArr, numericsArr, specialCharacterArr)
-  }
-  // For 3 Positive options
-  else if (uppercase && lowercase && numerics){
-    criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr)
-  }
-  // For 2 Positive options
-  else if (uppercase && lowercase){
-    criteria = criteria.concat(uppercaseArr, lowercaseArr)
-  }
-  // For 2 Positive options
-  else if (uppercase && numerics){
-    criteria = criteria.concat(uppercaseArr, numericsArr)
-  }
-  // For 2 Positive options
-  else if (uppercase && specialCharacter){
-    criteria = criteria.concat(uppercaseArr, specialCharacterArr)
-  }
-  // For 2 Positive options
-  else if (lowercase && numerics){
-    criteria = criteria.concat(lowercaseArr, numericsArr)
-  }
-  // For 2 Positive options
-  else if (lowercase && specialCharacter){
-    criteria = criteria.concat(lowercaseArr, specialCharacterArr)
-  }
-  // For 2 Positive options
-  else if (numerics && specialCharacter){
-    criteria = criteria.concat(numericsArr, specialCharacterArr)
-  }
-  // For 1 Positive options
-  else if (uppercase){
-    criteria = criteria.concat(uppercaseArr)
-  }
-  // For 1 Positive options
-  else if (lowercase){
-    criteria = criteria.concat(lowercaseArr)
-  }
-  // For 1 Positive options
-  else if (numerics){
-    criteria = criteria.concat(numericsArr)
-  }
-  // For 1 Positive options
-  else if (specialCharacter) {
-    criteria = criteria.concat(specialCharacterArr)
-  }
-  else {
-    return generatePassword()
-  }
-
-
-  // if (uppercase) {
+  // // For 4 Positive options
+  // else if (uppercase && lowercase && numerics && specialCharacter) {
+  //   criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr, specialCharacterArr)
+  // }
+  // // For 3 Positive options
+  // else if (uppercase && lowercase && numerics){
+  //   criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr)
+  // }
+  // // For 3 Positive options
+  // else if (uppercase && lowercase && specialCharacter){
+  //   criteria = criteria.concat(uppercaseArr, lowercaseArr, specialCharacterArr)
+  // }
+  // // For 3 Positive options
+  // else if (uppercase && numerics && specialCharacter){
+  //   criteria = criteria.concat(uppercaseArr, numericsArr, specialCharacterArr)
+  // }
+  // // For 3 Positive options
+  // else if (uppercase && lowercase && numerics){
+  //   criteria = criteria.concat(uppercaseArr, lowercaseArr, numericsArr)
+  // }
+  // // For 2 Positive options
+  // else if (uppercase && lowercase){
+  //   criteria = criteria.concat(uppercaseArr, lowercaseArr)
+  // }
+  // // For 2 Positive options
+  // else if (uppercase && numerics){
+  //   criteria = criteria.concat(uppercaseArr, numericsArr)
+  // }
+  // // For 2 Positive options
+  // else if (uppercase && specialCharacter){
+  //   criteria = criteria.concat(uppercaseArr, specialCharacterArr)
+  // }
+  // // For 2 Positive options
+  // else if (lowercase && numerics){
+  //   criteria = criteria.concat(lowercaseArr, numericsArr)
+  // }
+  // // For 2 Positive options
+  // else if (lowercase && specialCharacter){
+  //   criteria = criteria.concat(lowercaseArr, specialCharacterArr)
+  // }
+  // // For 2 Positive options
+  // else if (numerics && specialCharacter){
+  //   criteria = criteria.concat(numericsArr, specialCharacterArr)
+  // }
+  // // For 1 Positive options
+  // else if (uppercase){
   //   criteria = criteria.concat(uppercaseArr)
-  //   console.log(criteria)
   // }
-
-  // if (lowercase) {
+  // // For 1 Positive options
+  // else if (lowercase){
   //   criteria = criteria.concat(lowercaseArr)
-  //   console.log(criteria)
   // }
-
-  // if (numerics) {
+  // // For 1 Positive options
+  // else if (numerics){
   //   criteria = criteria.concat(numericsArr)
-  //   console.log(criteria)
+  // }
+  // // For 1 Positive options
+  // else if (specialCharacter) {
+  //   criteria = criteria.concat(specialCharacterArr)
+  // }
+  // else {
   // }
 
-  // if (specialCharacter) {
-  //   criteria = criteria.concat(specialCharacterArr)
-  //   console.log(criteria)
-  // }
+
+  if (uppercase) {
+    criteria = criteria.concat(uppercaseArr)
+    console.log(criteria)
+  }
+
+  if (lowercase) {
+    criteria = criteria.concat(lowercaseArr)
+    console.log(criteria)
+  }
+
+  if (numerics) {
+    criteria = criteria.concat(numericsArr)
+    console.log(criteria)
+  }
+
+  if (specialCharacter) {
+    criteria = criteria.concat(specialCharacterArr)
+    console.log(criteria)
+  }
 
   var passWord = ("")
 
